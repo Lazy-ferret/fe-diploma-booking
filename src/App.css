@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
+/* @import '~js-datepicker/dist/datepicker.min.css'; */
+
+/* Common styles */
+
+* {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* .nav-link {
+    text-decoration: none;
+} */

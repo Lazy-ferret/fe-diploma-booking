@@ -1,0 +1,218 @@
+.Details {
+    margin-left: 16rem;
+
+    width: 22.5rem;
+    background-color: #3E3C41;
+}
+
+.Details-DateFilter {
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 1.6rem;
+
+}
+
+.DateFilter-Input_container {
+    width: 18.5rem;
+    margin: 0 auto;
+}
+
+.DateFilter-Input_title {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+}
+
+.DateFilter-Input {
+    /* width: 100%; */
+    width: 18.5rem;
+    height: 2.6rem;
+    margin-bottom: 1.6rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+
+    background: #FFFFFF;
+    border-radius: 0.2rem;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position-y: center;
+    background-image: url(../../img/date-icon.png);
+    background-position-x: 16rem;
+}
+
+
+.DetailsFilter-List {
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #E5E5E5;
+    list-style: none;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+}
+
+.DetailsFilter-Item {
+    display: flex;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-left: 4.25rem;
+}
+
+.DetailsFilter-Item-Title {
+    width: 6.3rem;
+    margin-left: 2.1rem;
+}
+
+.ant-switch {
+    margin-left: 2rem;
+    width: 4.5rem;
+    height: 1.2rem;
+    position: relative;
+    color: rgba(255, 168, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.ant-switch-handle {
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.ant-switch-handle::before {
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+    background-color: #FFA800;
+}
+
+.ant-switch-checked {
+    background: #FCDC9D;
+}
+
+
+/* PRICE FILTER STYLES */
+
+.Details-PriceFilter {
+    width: 18.5rem;
+    margin: 0 auto;
+    padding-top: 2.3rem;
+    padding-bottom: 2rem;
+}
+
+.Details-PriceFilter_title {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+}
+
+.Details-PriceFilter-fromTo {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Details-PriceFilter-slider {
+    height: 2rem;
+}
+
+.ant-slider-handle {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: -0.2rem;
+    top: 0.4rem;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 50%;
+}
+
+.ant-slider-rail {
+    position: absolute;
+    width: 100%;
+    height: 1.2rem;
+    background-color: #3e3c41;
+    border: 1px solid #c4c4c4;
+    border-radius: 0.5rem;
+}
+
+.ant-slider-track {
+    position: absolute;
+    height: 1.2rem;
+    background-color: #ffa800;
+    border: 1px solid #c4c4c4;
+    border-radius: 0.5rem;
+}
+
+.ant-tooltip {
+
+    margin-top: 2rem;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 250px;
+    visibility: visible;
+  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+  
+    color: #e5e5e5; */
+   
+  }
+
+  .ant-tooltip-inner {
+    min-width: 1.8rem;
+    min-height: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: right;
+    color: #E5E5E5;
+    background-color: transparent;
+    box-shadow: unset;
+  }
+  
+  .ant-tooltip-placement-bottom,
+  .ant-tooltip-placement-bottomLeft,
+  .ant-tooltip-placement-bottomRight {
+    padding-top: 0.4rem;
+  }
+  
+  .ant-tooltip-placement-bottom .ant-tooltip-arrow,
+  .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+  .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+    display: none;
+  }
+ 
+.Details-PriceFilter-price {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: right;
+    color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.price-current {
+    position: absolute;
+    left: 6.5rem;
+}

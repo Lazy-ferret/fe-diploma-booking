@@ -1,0 +1,58 @@
+.Order-Result {
+    width: 60rem;
+    margin-left: 5.3rem;
+}
+
+.Order-Result-header {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+}
+
+.TotalRoutes_count {
+    margin-left: 0.3rem;
+}
+
+.Result-nav {
+    display: flex;
+}
+
+.sort_items {
+    width: 8.6rem;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+
+    color: #3E3C41;
+}
+
+.sort_items .sort_option {
+    height: 1.8rem;
+    background-color: #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #3E3C41;
+
+}
+
+.Result-ShowItems {
+    display: flex;
+}
+
+.ShowItems_list {
+    display: flex;
+}
+
+.ShowItems_list li {
+    margin-left: 0.5rem;
+}
+
+.ShowItems_list .active {
+    color: #3E3C41;
+}

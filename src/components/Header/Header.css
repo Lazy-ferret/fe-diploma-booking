@@ -1,0 +1,110 @@
+/* Header Styles */
+
+.Header {
+    position: relative;
+    width: 100%;
+    height: 61.5rem;
+
+    background-image: url(../../img/header_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 214, 0, 0.8);
+}
+
+.Header_order {
+    position: relative;
+    width: 100%;
+    height: 43.1rem;
+
+    background-image: url(../../img/header_order_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Header_success {
+    background-image: url(../../img/header_order_success.png);
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 52rem;
+}
+
+
+.Header-Logo {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.Header-Logo span {
+    position: absolute;
+    width: 6.5rem;
+    height: 3rem;
+    left: 16.1rem;
+    top: 1rem;
+
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.6rem;
+
+    color: #E5E5E5;
+}
+
+.Header-Menu {
+    position: absolute;
+    width: 100%;
+    height: 5.8rem;
+    left: 0px;
+    top: 4rem;
+
+    background: #292929;
+}
+
+.Header-Menu_list {
+    display: flex;
+    margin-left: 16.1rem;
+    padding: 0;
+    margin-top: 1.5rem;
+    height: 100%;
+}
+
+.Header-Menu_item {
+    list-style: none;
+
+    margin-right: 5rem;
+    left: 16.1rem;
+    top: 5.6rem;
+    min-width: 5.3rem;
+    height: 2.6rem;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;    
+    cursor: pointer; 
+}
+
+.Header-Menu_link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Header-Title {
+    position: absolute;
+    width: 31.6rem;
+    height: 10.6rem;
+    left: 21.7rem;
+    top: 35.8rem;
+
+    font-weight: 200;
+    font-size: 4.5rem;
+    line-height: 5.2rem;
+    color: #FFFFFF;
+}
+
+
+.bold-text {
+    font-weight: bold;
+}
