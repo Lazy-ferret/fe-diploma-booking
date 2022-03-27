@@ -16,7 +16,7 @@ export default function RoutesResult(props) {
         items && items.map((item) => { arrMin.push(item.min_price) })
         let result = Math.min.apply(null, arrMin)
         console.log(result)
-        return result
+        return result !== Infinity ? result : 0
     }
 
     const getMaxPrice = () => {
@@ -31,7 +31,7 @@ export default function RoutesResult(props) {
         })
         let result = Math.max.apply(null, arrValues)
         console.log(result)
-        return result
+         return result !== -Infinity ? result : 0
     }
 
 

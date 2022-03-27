@@ -18,9 +18,9 @@ export default function FeaturesFilter() {
         dispatch(setFilters({ [filter]: state }))
     }
 
-    const onChange = (checked) => {
-        console.log(`switch to ${checked}`)
-    }
+    // const onChange = (checked) => {
+    //     console.log(`switch to ${checked}`)
+    // }
 
 
     return (

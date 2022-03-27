@@ -13,11 +13,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchRoutes, setSearchingRoute } from '../../actions/routes';
 import { useNavigate } from 'react-router-dom';
 import { clearFromCity, clearToCity, setDateEnd, setDateStart, setFromCity, setToCity } from '../../actions/searchingRoute';
+import { setOrderStatus } from '../../actions/order';
 const { Option } = AutoComplete;
 
 export default function SearchForm(props) {
     const { loading, error } = useSelector(state => state.routes);
     const { dateStart, dateEnd, fromCity, toCity } = useSelector(state => state.searchingRoute);
+    const { orderStatus } = useSelector(state => state.order)
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -86,8 +88,15 @@ export default function SearchForm(props) {
             date_end: dateEnd ? moment(dateEnd).format('YYYY-DD-MM') : ''
         }
         dispatch(fetchRoutes(submitData));
+        dispatch(setOrderStatus(1))
         navigate('/order');
     }
+
+    const getFormClassName = () => {
+        let status = (orderStatus) ? 'Header-SearchForm-Order_container' : ''
+        let className = `Header-SearchForm_container ${status}`
+        return className
+      }
 
     if (loading) {
         return <p>...Loading</p>;;
@@ -98,7 +107,7 @@ export default function SearchForm(props) {
 
     return (
 
-        <div className="Header-SearchForm_container">
+        <div className={getFormClassName()}>
             <form className="Header-SearchForm" onSubmit={onSearchFormSubmit}>
                 <div className="SearchForm-Section_container">
                     <div className="SearchForm-Section SearchForm_direction">

@@ -1,0 +1,206 @@
+.Details-Passengers {
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.Details-Passengers-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    color: #E5E5E5;
+}
+
+/* .direction_container, .price_container {
+    border-top: 1px solid #E5E5E5;
+} */
+
+.Details-travel-date {
+    margin-left: 1rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+}
+
+.train-info {
+    margin: 1.3rem 2rem;
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #E5E5E5;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.train-info_value {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+    text-align: right;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #FFFFFF;
+}
+
+.train-number .train-info_value {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.Details-time-info {
+    margin: 0 2rem;
+
+}
+
+.Details-time-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Details-time-container.backward-direction {
+    flex-direction: row-reverse;
+}
+
+
+.time-wrapper {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.route-time {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #FFFFFF;
+}
+
+.Details-route-info {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+}
+
+.Details-route .route-city {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-transform: capitalize;
+    
+    color: #E5E5E5;
+}
+
+.Details-route {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-point {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.route-station {
+    max-width: 6rem;
+}
+
+
+.Details-Passengers-price {
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    padding: 2rem;
+}
+
+.Details-Passengers-icon {
+    margin-top: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-image: url(../../img/passenger-icon.png);
+}
+
+
+.Details-Passengers-currentPrice {
+    margin: 0 2rem;
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #E5E5E5;
+}
+
+.currentPrice-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1.3rem;
+}
+
+.currentPrice-price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+
+    color: #FFFFFF;
+}
+
+.currentPrice-price_rouble {
+    color: #928F94;
+}
+
+.Details-Passengers-totalPrice {
+    border-top: 1px solid #E5E5E5;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+}
+
+.totalPrice-price {
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    color: #FFA800;
+}
+
+.totalPrice-price_rouble {
+    font-weight: normal;
+    color: #928F94;
+}
+
+.route-direction-arrow {
+width: 1.9rem;
+height: 1.25rem;
+background-repeat: no-repeat;
+background-position: center center;
+background-image: url('../../img/arrow-right-yellow.png');
+}
+
+
+

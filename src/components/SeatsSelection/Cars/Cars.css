@@ -1,0 +1,130 @@
+.CarScheme-wrapper {
+    margin-top: 4rem;
+    margin-left: 1.25rem;
+    width: 57.5rem;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../img/car-scheme.png");
+}
+
+.CarScheme-wrapper.fourth {
+    background-image: url("../../../img/car-scheme_fourth.png");
+}
+
+.CarScheme-carNumber {
+    margin-left: 2.35rem;
+    color: #fff;
+}
+
+.CarScheme-cover {
+    width: 44.5rem;
+    height: 7rem;
+    margin-top: 0.4rem;
+    margin-left: 8.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Seat */
+
+.CarScheme-seat {
+    width: 1.6rem;
+    height: 1.75rem;
+    padding-top: 0.4rem;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;   
+}
+
+.CarScheme-seat.available {
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border: 2px solid #f3f3f3;
+    color: #000;
+}
+
+.CarScheme-seat.selected {
+    border: 2px solid #FFA800;
+  }
+
+.CarScheme-seat:hover {
+    background-color: #FFA800;
+}
+
+.bottom-row .CarScheme-seat {
+    width: 2.6rem;
+    height: 1.5rem;
+    padding-top: 0.2rem;
+}
+
+.CarScheme-wrapper.first .CarScheme-seat {
+    height: 3.5rem;
+    padding-top: 2rem;
+}
+
+.CarScheme-wrapper.fourth .CarScheme-seat {
+    width: 1.6rem;
+    height: 1.5rem;
+    padding-top: 0.2rem;
+}
+
+
+/* List */
+
+.CarScheme-seats-list {
+    display: flex;
+}
+
+.CarScheme-seats-list.top-row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CarScheme-seats-list.bottom-row {
+    flex-direction: row;
+    background-color: #9a9a9a;
+}
+
+.CarScheme-wrapper.fourth .CarScheme-seats-list {
+    height: 3rem;
+}
+
+.CarScheme-wrapper.fourth .CarScheme-seats-list.bottom-row {
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Block */
+
+.top-row .CarScheme-seats-block {
+    width: 5rem;
+    height: 3.9rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.bottom-row .CarScheme-seats-block {
+    width: 5.4rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0.2rem;
+}
+
+.CarScheme-wrapper.fourth .CarScheme-seats-block {
+    height: 3.2rem;
+}
+
+
+.CarScheme-wrapper.fourth .bottom-row .CarScheme-seats-block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+

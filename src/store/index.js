@@ -3,11 +3,15 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import routesReducer from "../reducers/routes";
 import searchingRouteReducer from "../reducers/searchingRoute";
+import ticketsReducer from "../reducers/tickets";
+import orderReducer from "../reducers/order";
 
 
 const reducer = combineReducers({
   routes: routesReducer,
-  searchingRoute: searchingRouteReducer   
+  searchingRoute: searchingRouteReducer,
+  tickets: ticketsReducer, 
+  order: orderReducer   
 
 });
 

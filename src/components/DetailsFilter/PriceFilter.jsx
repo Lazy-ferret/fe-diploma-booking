@@ -21,7 +21,6 @@ const onPriceChange = (value) => {
                 <span className="fromTo_to">до</span>
             </div>
 
-
             <Slider
                 className="Details-PriceFilter-slider"
                 min={minPrice}
@@ -33,7 +32,7 @@ const onPriceChange = (value) => {
             />
 
             <div className="Details-PriceFilter-price">
-                <span className="price-min">{minPrice}</span>
+                <span className="price-min">{minPrice === -Infinity ? null : minPrice}</span>
                 <span className="price-max">{maxPrice}</span>
             </div>
         </div>

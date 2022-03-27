@@ -1,0 +1,303 @@
+.Passenger-Info {
+    min-height: 6rem;
+
+    margin-bottom: 3rem;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.Passenger-Info.active {
+    background-color: #F9F9F9;
+}
+
+.Passenger-Info-title {
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #292929;
+}
+
+.Passenger-Info-btn {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../../img/passenger-btn.png);
+}
+
+.Passenger-Info-btn:hover {
+    background-image: url(../../img/passenger-btn_hover.png);
+}
+
+.Passenger-Info-btn.active {
+    background-image: url(../../img/passenger-btn_active.png);
+}
+
+.Passenger-Info-btn:active {
+    background-image: url(../../img/passenger-btn_active.png);
+}
+
+.Passenger-Info-btn.add_btn {
+    background-image: url(../../img/passenger-btn_hover.png);
+    margin: 0 0 0 auto;
+}
+
+.Passenger-Info-btn.delete_btn {
+    background-image: url(../../img/passenger-btn_delete.png);
+    margin: 0 0 0 auto;
+}
+
+.Passenger-Info-btn.error {
+    background-image: url(../../img/passenger-btn_error.png);
+}
+
+.Passenger-Info-btn.success {
+    background-image: url(../../img/passenger-btn_success.png);
+}
+
+.Passenger-Info_data {
+    padding: 2rem;
+    border-top: 1px dashed #928F94;
+    background-color: #FFFFFF;
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+}
+
+.personalData_inputField {
+    margin-top: 0.5rem;
+
+    border: 1px solid #928F94;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    height: 3.1rem;
+    text-align: start;
+    padding-left: 0.5rem;
+
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.personalData-age {
+    position: relative;
+    width: 17.5rem;
+}
+
+.personalData-age::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 0.8rem;
+    height: 0.5rem;
+    top: 1.4rem;
+    right: 1rem;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../../img/select-arrow.png);
+}
+
+.personalData-select_age {
+    width: 100%;
+}
+
+.personalData-select_age .personalData-select_option {
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #F4F3F6;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 5rem;
+}
+
+.personalData-fullName {
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullName-item_input {
+    width: 17.5rem;
+}
+
+.personalData-birthData {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.gender_value-container {
+    width: 12.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gender_value-btn {
+    width: 50%;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    padding: 0.5rem 0;
+
+}
+
+.gender_value-btn:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.gender_value-btn:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.gender_value-btn.checked {
+    background: #FFA800;
+}
+
+.birthday_wrapper {
+
+    margin-left: 2rem;
+}
+
+.personalData-mobility {
+    margin-top: 3rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #292929;
+    display: flex;
+    align-items: center;
+}
+
+.mobility_checkbox {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+.Passenger-Info-documentData {
+    display: flex;
+}
+
+.documentData_inputFields {
+    display: flex;
+
+}
+
+.documentData-type_document {
+    position: relative;
+    min-width: 13rem;
+    padding-top: 0.5rem;
+    padding-right: 6rem;
+
+
+}
+
+.documentData-type_document::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 0.8rem;
+    height: 0.5rem;
+    top: 1.4rem;
+    right: 1rem;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../../img/select-arrow.png);
+}
+
+.passport-item_wrapper {
+    margin-left: 2rem;
+
+}
+
+
+.passport-item_input {
+    width: 13rem;
+}
+
+.passport-item_input.error {
+    color: rgba(255, 61, 0, 0.8);
+    border: 1px solid rgba(255, 61, 0, 0.76);
+}
+
+.Passenger-Info-nextPassenger {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.Passenger-Info-nextPassenger.error {
+    background: rgba(255, 61, 0, 0.38);
+    justify-content: start;
+    /* height: 7.5rem; */
+
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #292929;
+}
+
+.Passenger-Info-nextPassenger.success {
+    background: #B2F6A1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.errorMessage-hint span {
+    font-weight: bold;
+}
+
+.nextPassenger-btn {
+    width: 19rem;
+    height: 3.25rem;
+
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #292929;
+}
+
+.nextPassenger-btn.error {
+    display: none;
+}
+
+.nextPassenger-successMsg_wrapper {
+    display: flex;
+
+}
+
+.nextPassenger-successMsg {
+    text-align: center;
+    align-self: center;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+}

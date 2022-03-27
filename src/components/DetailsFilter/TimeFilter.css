@@ -1,0 +1,121 @@
+.Details-TimeFilter-slider_container {
+    width: 18.5rem;
+    margin: 0 auto;
+}
+
+
+.PriceFilter-slider_item>.ant-slider-handle {
+    width: 1.1rem;
+    height: 1.1rem;
+    left: -0.2rem;
+    top: 0.4rem;
+}
+
+.PriceFilter-slider_item>.ant-slider-rail {
+    height: 0.6rem;
+}
+
+.PriceFilter-slider_item>.ant-slider-track {
+    height: 0.6rem;
+}
+
+.Details-TimeFilter-slider_container {
+    padding-bottom: 2.8rem;
+}
+
+.Details-TimeFilter-slider.arrival {
+    margin-top: 2.8rem;
+}
+
+.slider-title {
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+
+    color: #E5E5E5;
+}
+
+.slider-title.arrival {
+    text-align: end;
+}
+
+
+/* .TimeFilter-slider-layout {
+    border: 1px solid #C4C4C4;
+    border-radius: 0.5rem;
+    height: 0.6rem;
+    position: relative;
+}
+
+.TimeFilter-slider-current {
+    height: 100%;
+    width: 8rem;
+    background-color: #FFA800;
+    border-radius: 0.5rem;
+}
+
+.TimeFilter-slider-current.arrival {
+    width: 7.3rem;
+    margin-left: 2.8rem;
+}
+
+.TimeFilter-slider-current::before {
+    content: '';
+    position: absolute;
+    left: -0.2rem;
+    top: -0.2rem;
+
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    background-position: center center;
+}
+
+.TimeFilter-slider-current.arrival::before {
+    left: 2.8rem;
+}
+
+.TimeFilter-slider-current.arrival::after {
+    left: 9.8rem;
+}
+
+.TimeFilter-slider-current::after {
+    content: '';
+    position: absolute;
+    left: 7rem;
+    top: -0.2rem;
+
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    background-position: center center;
+} */
+
+.Details-TimeFilter-time {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #E5E5E5;
+}
+
+.time-current.departure {
+    position: absolute;
+    left: 6.5rem;
+}
+
+.time-current.arrival {
+    position: absolute;
+    left: 9.3rem;
+}
+
+.Details-PriceFilter-price {
+    margin-top: 0.5rem;
+}

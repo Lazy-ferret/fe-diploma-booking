@@ -34,9 +34,6 @@ export const requestRoutes = async (params) => {
     //      routesURL += `&is_express=${is_express}`;
     // }
 
-    console.log(routesURL)
-    
-    
     const response = await fetch(routesURL);
     if (!response.ok) {
         throw new Error(response.statusText);
@@ -45,8 +42,25 @@ export const requestRoutes = async (params) => {
     return data    
 }
 
-
-
+export const requestSeats = async (id, filters) => {
+    let seatsURL = `${REACT_APP_BASE_URL}/routes/${id}/seats?`
+    if (filters.have_wifi) seatsURL += `&have_wifi=true`;
+    if (filters.is_express) seatsURL += `&is_express=true`;
+    if (filters.have_first_class) seatsURL += `&have_first_class=true`
+    if (filters.have_second_class) seatsURL += `&have_second_class=true`
+    if (filters.have_third_class) seatsURL += `&have_third_class=true`
+    if (filters.have_fourth_class) seatsURL += `&have_fourth_class=true`
+    
+    console.log(seatsURL)
+       
+    const response = await fetch(seatsURL);
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    };
+    const data = await response.json();
+    console.log(data) 
+    return data    
+}
 
 
 export const setSubscription = async (email) => {

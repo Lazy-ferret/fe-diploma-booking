@@ -151,32 +151,10 @@
 }
 
 .ant-tooltip {
+    margin-top: 2rem;    
+}
 
-    margin-top: 2rem;
-    /* box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-feature-settings: 'tnum';
-    position: absolute;
-    z-index: 1070;
-    display: block;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 250px;
-    visibility: visible;
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: right;
-  
-    color: #e5e5e5; */
-   
-  }
-
-  .ant-tooltip-inner {
+.ant-tooltip-inner {
     min-width: 1.8rem;
     min-height: 2rem;
     font-weight: normal;
@@ -186,20 +164,20 @@
     color: #E5E5E5;
     background-color: transparent;
     box-shadow: unset;
-  }
-  
-  .ant-tooltip-placement-bottom,
-  .ant-tooltip-placement-bottomLeft,
-  .ant-tooltip-placement-bottomRight {
+}
+
+.ant-tooltip-placement-bottom,
+.ant-tooltip-placement-bottomLeft,
+.ant-tooltip-placement-bottomRight {
     padding-top: 0.4rem;
-  }
-  
-  .ant-tooltip-placement-bottom .ant-tooltip-arrow,
-  .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
-  .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+}
+
+.ant-tooltip-placement-bottom .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
     display: none;
-  }
- 
+}
+
 .Details-PriceFilter-price {
     font-weight: normal;
     font-size: 1rem;
@@ -215,4 +193,82 @@
 .price-current {
     position: absolute;
     left: 6.5rem;
+}
+
+/* TIME FILTER STYLES */
+.Details-Direction {
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    padding: 2rem;
+    background-color: #3E3C41;
+    width: 100%;
+
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    padding: 0;
+}
+
+/* .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+    top: calc(50% + 2px);
+  }
+   */
+.ant-collapse-ghost>.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box {
+    padding: 20px 0 40px;
+}
+
+
+
+.Details-Direction-Icon {
+    margin-top: 0.3rem;
+
+}
+
+.Details-Direction-Icon {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+
+}
+
+.Details-Direction-Icon.forward-direction {
+    background-image: url(../../img/forward-icon.png);
+}
+
+.Details-Direction-Icon.backward-direction {
+    background-image: url(../../img/backward-icon.png);
+}
+
+.Details-Direction-btn {
+    margin-top: 0.5rem;
+}
+
+.Details-Direction-btn::before {
+    content: '';
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-position: center center;
+    background-image: url(../../img/dropdown-btn.png);
+}
+
+.Details-Direction-btn:hover::before {
+    background-image: url(../../img/dropdown-btn-hover.png);
+}
+
+.Details-Direction-btn:active::before {
+    background-image: url(../../img/dropdown-btn-active.png);
+}
+
+.Details-Direction-btn.active::before {
+    background-image: url(../../img/dropdown-btn-active.png);
+}
+
+.Details-Direction_title {
+    width: 14.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
 }

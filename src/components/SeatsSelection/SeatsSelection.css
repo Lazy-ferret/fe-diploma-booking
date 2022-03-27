@@ -274,6 +274,7 @@
     line-height: 1.75rem;
 
     color: #928F94;
+    cursor: pointer;
 }
 
 .CarType-type.active {
@@ -291,37 +292,41 @@
     background-size: contain;
 }
 
-/* .third_class {
+.CarType-type.fourth_class {
+    background-image: url(../../img/fourth_class-icon-gray.png);
+}
+
+.CarType-type>.fourth_class {
+    background-image: url(../../img/fourth_class-icon-gray.png);
+}
+
+.CarType-type.active>.fourth_class {
+    background-image: url(../../img/fourth_class-icon-yellow.png);
+}
+
+.CarType-type>.third_class {
     background-image: url(../../img/third_class-icon-gray.png);
 }
 
-.third_class.active {
+.CarType-type.active>.third_class {
     background-image: url(../../img/third_class-icon-yellow.png);
 }
 
-.second_class {
+.CarType-type>.second_class {
     background-image: url(../../img/second_class-icon-gray.png);
 }
 
-.second_class.active {
+.CarType-type.active>.second_class {
     background-image: url(../../img/second_class-icon-yellow.png);
 }
 
-.first_class {
+.CarType-type>.first_class {
     background-image: url(../../img/first_class-icon-gray.png);
 }
 
-.first_class.active {
+.CarType-type.active>.first_class {
     background-image: url(../../img/first_class-icon-yellow.png);
 }
-
-.luxe {
-    background-image: url(../../img/luxe-icon-gray.png);
-}
-
-.luxe.active {
-    background-image: url(../../img/luxe-icon-yellow.png);
-} */
 
 .CarType-name {
     margin-top: 1rem;
@@ -398,8 +403,8 @@
 .car-number {
     font-weight: bold;
 
-    font-size: 4.5rem;
-    line-height: 5.25rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
 }
 
 .details_block {
@@ -635,3 +640,78 @@
 .ChooseSeats-train-route {
     text-transform: capitalize;
 }
+
+/* Car Sheme Styles */
+
+.ChooseSeats-CarScheme {
+    position: relative;
+
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #292929;
+}
+
+.CarScheme-hint {
+    width: 10.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+
+    background: #F3F3F3;
+    border-radius: 0.3rem;
+}
+
+.CarScheme-scheme {
+    margin-top: 4.2rem;
+
+
+    width: 100%;
+    height: 9rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+.CarScheme-scheme.second_class {
+    background-image: url(../../img/car-second_class.png);
+}
+
+.CarScheme-scheme.third_class {
+    background-image: url(../../img/car-third_class.png);
+}
+
+.CarScheme-scheme.fourth_class {
+    background-image: url(../../img/car-fourth_class.png);
+}
+
+.CarScheme-scheme.first_class {
+    background-image: url(../../img/car-first_class.png);
+}
+
+/* Total Price Styles */
+
+.ChooseSeats-TotalPrice {
+    height: 5rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.TotalPrice-price_value {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #FFA800;
+}
+
+.TotalPrice-price_rouble {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-left: 0.5rem;
+    color: #928F94;
+}
+
