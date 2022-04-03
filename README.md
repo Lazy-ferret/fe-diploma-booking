@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+Дипломная работа к профессии frontend-разработчик (Система бронирования ЖД билетов)
+Краткое описание задачи дипломной работы:
+Создать SPA на React для сервиса покупки билетов на ж/д, сверстанное по макетам в Figma, в котором в качестве Апи используется внешний сервер.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+План работ:
+Не паникуйте
+Внимательно рассмотрите макеты в Figma, определите для себя план вёрстки макетов, выделите общие компоненты.
+Верстайте страницы придерживаясь правил именования по БЭМ.
+Создайте приложение React.
+Используя сверстанные ранее страницы, итеративно наполняйте ваше React-приложение функционалом.
+Проверьте, всё ли работает.
+Отправьте ссылку вашего проекта на github или расшаренную папку дипломному руководителю на проверку.
+В качестве заготовки можно взять https://bitbucket.org/sesdew/fe-git-example/src/master/ - это пустой репозиторий с прописанным .gitignore для проектов на react,
 
-## Available Scripts
+"Заливайте" изменения на github или в файлообменник хотя бы раз в день (сгорит жесткий диск, пропадет ноутбук или из-за скачка напряжения все данные на ПК «самоудалятся», то всегда будет резервная копия с отставанием максимум в день).
 
-In the project directory, you can run:
+Что является итогом работы?
+Репозиторий на github с файлами вашего проекта
+или
 
-### `npm start`
+Папка на Yandex/Google диске c файлами вашего проекта(без node_modules) - применимо только если совершенно ни в каком контексте не проходили Git
+Описание проекта
+Основные элементы
+Вагон
+Направление
+Группа направлений
+Место (билет)
+Вагон
+Вагон может быть одним из типов: сидячий, люкс (СВ), купе, плацкарт
+У каждого типа вагона своя карта рассадки мест.
+У каждого вагона своя стоимость билетов.
+Для каждого вагона есть возможность выбора дополнительных услуг: бельё, кондиционер и Wi-Fi.
+Для некоторых вагонов стоимость белья включена в стоимость билета (стоимость белья не должна прибавляться при формировании конечной стоимости билета).
+Направление
+Направление - путь движения вагона из одного города в другой.
+Направление предполагает движение поезда только в одну сторону.
+Направление имеет дату отправления и дату прибытия.
+Группа направлений
+Используется для того, чтобы обеспечить возможность путешествия из одного города в другой и обратно.
+Объединяет в себе два направления
+Место (билет)
+Имеет свой номер на карте вагона
+Может быть занято другим пассажиром
+Закреплено за конкретным направлением
+Далее Информация по API
+Как правильно задавать вопросы дипломному руководителю?
+Что следует делать, чтобы все получилось:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Попробовать найти ответ сначала самому в интернете. Ведь, именно это скилл поиска ответов пригодится тебе на первой работе. И только после этого спрашивать дипломного руководителя
+В одном вопросе должна быть заложена одна проблема
+По возможности, прикреплять к вопросу скриншоты и стрелочкой показывать где не получается. Программу для этого можно скачать здесь https://app.prntscr.com/ru/
+По возможности, задавать вопросы в комментариях к коду.
+Начинать работу над дипломом как можно раньше! Чтобы было больше времени на правки.
+Делать диплом по-частям, а не все сразу. Иначе, есть шанс, что нужно будет все переделывать :)
+Что следует делать, чтобы ничего не получилось:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Писать вопросы вида “Ничего не работает. Не запускается. Всё сломалось.”
+Откладывать диплом на потом.
+Ждать ответ на свой вопрос моментально. Дипломные руководители - работающие разработчики, которые занимаются, кроме преподавания, своими проектами. Их время ограничено, поэтому постарайтесь задавать правильные вопросы, чтобы получать быстрые ответы!
