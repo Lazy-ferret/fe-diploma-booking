@@ -4,7 +4,6 @@ import {
     FETCH_ROUTES_SUCCESS,
     SET_MIN_PRICE,
     SET_MAX_PRICE,
-
     SET_CURRENT_ROUTE,
     CLEAR_CURRENT_ROUTE,
 } from "../actions/actionTypes";
@@ -66,10 +65,7 @@ export default function routesReducer(state = initialState, action) {
                 ...state,
                 currentRoute: null
             };
-
         default:
             return state;
     }
 }
-
-

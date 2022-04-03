@@ -6,13 +6,11 @@ import searchingRouteReducer from "../reducers/searchingRoute";
 import ticketsReducer from "../reducers/tickets";
 import orderReducer from "../reducers/order";
 
-
 const reducer = combineReducers({
   routes: routesReducer,
   searchingRoute: searchingRouteReducer,
-  tickets: ticketsReducer, 
-  order: orderReducer   
-
+  tickets: ticketsReducer,
+  order: orderReducer
 });
 
 const store = createStore(

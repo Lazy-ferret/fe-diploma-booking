@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './DetailsFilter.css';
 import DatePicker from 'react-datepicker';
 import ru from 'date-fns/locale/ru';
@@ -9,9 +9,8 @@ import { setDateEnd, setDateStart } from '../../actions/searchingRoute';
 
 export default function DateFilter(props) {
     const { dateStart, dateEnd, fromCity, toCity } = useSelector(state => state.searchingRoute);
-
     const dispatch = useDispatch();
-    
+
     useEffect(() => {
         if (dateStart || dateEnd) {
             const submitData = {
@@ -22,15 +21,15 @@ export default function DateFilter(props) {
             }
             dispatch(fetchRoutes(submitData));
         }
-    }, [dateStart, dateEnd]);
+    }, [dateStart, dateEnd, fromCity.id, toCity.id, dispatch]);
 
     const onDateStartChange = (date) => {
         dispatch(setDateStart(date))
-    }
+    };
 
     const onDateEndChange = (date) => {
         dispatch(setDateEnd(date))
-    }
+    };
 
     return (
         <div className="Details-DateFilter">
@@ -60,4 +59,4 @@ export default function DateFilter(props) {
             </div>
         </div>
     )
-}
+};

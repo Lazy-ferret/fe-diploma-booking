@@ -1,24 +1,23 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import CarScheme from './CarScheme'
-import TotalPrice from './TotalPrice'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import CarScheme from './CarScheme';
+import TotalPrice from './TotalPrice';
 
 export default function CurrentCarInfo(props) {
-    const { coach } = useSelector(state => state.tickets.currentCoach.coach)
-    const {selectedSeats} = useSelector(state => state.tickets)
+    const { coach } = useSelector(state => state.tickets.currentCoach.coach);
+    const { selectedSeats } = useSelector(state => state.tickets);
 
     const onMouseOver = (e) => {
-        e.target.querySelector('.features-hint').classList.remove('hidden')
-    }
+        e.target.querySelector('.features-hint').classList.remove('hidden');
+    };
 
     const onMouseOut = (e) => {
-        e.target.querySelector('.features-hint').classList.add('hidden')
-    }
+        e.target.querySelector('.features-hint').classList.add('hidden');
+    };
 
     const onFeatureClick = (e) => {
-        e.target.classList.add("choosen")
-    }
-
+        e.target.classList.add("choosen");
+    };
 
     return (
         <div className='ChooseSeats-CurrentCar_container'>
@@ -30,7 +29,6 @@ export default function CurrentCarInfo(props) {
                     </div>
 
                     <div className='CurrentCar-seats details_block'>
-
                         <div className='seats-total'>
                             <span>Места</span>
                             <span className='seats-total_quantity'> {coach.available_seats}</span>
@@ -51,26 +49,22 @@ export default function CurrentCarInfo(props) {
 
                     <div className='CurrentCar-price-container details_block'>
                         <div className='CurrentCar-price-title'>Стоимость</div>
-
                         {(coach.class_type === 'second' || coach.class_type === 'third') &&
                             <div className="CurrentCar-price upper">
                                 <span className='CurrentCar-price_value'>{coach.top_price}</span>
                                 <span className='CurrentCar-price_rouble'>₽</span>
                             </div>
                         }
-
                         <div className="CurrentCar-price lower">
                             <span className='CurrentCar-price_value'>{coach.bottom_price}</span>
                             <span className='CurrentCar-price_rouble'>₽</span>
                         </div>
                     </div>
-
                     <div className='CurrentCar-features details_block'>
                         <div className='CurrentCar-features-service'>
                             <span>Обслуживание</span>
                             <span className='features-service-name'>ФПК</span>
                         </div>
-
                         <div className='CurrentCar-features-icons'>
                             {coach.have_air_conditioning &&
                                 <div className='features-icon features-air_cond btn'
@@ -81,7 +75,6 @@ export default function CurrentCarInfo(props) {
                                     <span className='features-hint hidden'>кондиционер</span>
                                 </div>
                             }
-
                             {coach.have_wifi &&
                                 <div className='features-icon features-wi_fi btn'
                                     onMouseOver={onMouseOver}
@@ -110,18 +103,10 @@ export default function CurrentCarInfo(props) {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <CarScheme />
-
             {selectedSeats && selectedSeats.length > 0 && <TotalPrice />}
-
-            
-
         </div>
     )
-}
-
-
-
+};

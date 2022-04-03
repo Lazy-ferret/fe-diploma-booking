@@ -1,26 +1,25 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './Progressbar.css';
 
 export default function Progressbar(props) {
-    const { orderStatus } = useSelector(state => state.order)
-    const dispatch = useDispatch()
+    const { orderStatus } = useSelector(state => state.order);
 
     const getProgressbarClassName = () => {
-        let status = (orderStatus) ? 'Header-Progressbar_order' : ''
-        let className = `Header-Progressbar ${status}`
-        return className
-    }
+        let status = (orderStatus) ? 'Header-Progressbar_order' : '';
+        let className = `Header-Progressbar ${status}`;
+        return className;
+    };
 
     const getItemClassName = (number) => {
-        let status = (orderStatus >= number) ? 'Progressbar-Item_active' : ''
-        let className = `Progressbar-Item ${status}`
-        return className
-    }
+        let status = (orderStatus >= number) ? 'Progressbar-Item_active' : '';
+        let className = `Progressbar-Item ${status}`;
+        return className;
+    };
 
     return (
         <div className={getProgressbarClassName()}>
-            {(orderStatus !== 0)  &&
+            {(orderStatus !== 0) &&
                 <>
                     <div className={getItemClassName(1)}>
                         <div className="Progressbar-Item-content">
@@ -74,6 +73,4 @@ export default function Progressbar(props) {
             }
         </div>
     )
-}
-
-
+};

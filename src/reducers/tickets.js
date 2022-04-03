@@ -9,8 +9,6 @@ import {
     CLEAR_SELECTED_SEATS,
     SET_TOTAL_PRICE,
     SET_PASSENGERS_AGE
-
-
 } from "../actions/actionTypes";
 
 const initialState = {
@@ -31,9 +29,7 @@ const initialState = {
 
 export default function ticketsReducer(state = initialState, action) {
     switch (action.type) {
-
         case SET_TICKETS_QUANTITY:
-            // const { ticketsQuantity } = action.payload;
             return {
                 ...state,
                 ticketsQuantity: action.payload
@@ -83,10 +79,7 @@ export default function ticketsReducer(state = initialState, action) {
                 ...state,
                 passengersAge: action.payload
             }
-
         default:
             return state;
     }
-}
-
-
+};

@@ -1,5 +1,5 @@
-import React from 'react'
-import Seat from './Seat'
+import React from 'react';
+import Seat from './Seat';
 
 export default function CarSecondClass({ seatsAvailable, changeSeatsList }) {
   return (
@@ -55,6 +55,5 @@ export default function CarSecondClass({ seatsAvailable, changeSeatsList }) {
         </div>
       </div>
     </>
-
   )
-}
+};

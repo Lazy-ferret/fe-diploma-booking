@@ -7,22 +7,21 @@ import SearchForm from '../SearchForm/SearchForm';
 import './Header.css';
 
 export default function Header(props) {
-  const { orderStatus } = useSelector(state => state.order)
-  const dispatch = useDispatch()
+  const { orderStatus, orderSuccess } = useSelector(state => state.order);
+  const dispatch = useDispatch();
 
   const onLinkClick = () => {
     dispatch(setOrderStatus(0))
-  }
+  };
 
   const getHeaderClassName = () => {
-    let status = (orderStatus) ? 'Header_order' : ''
-    let success = ''
-    let className = `container Header ${status} ${success}`
-    return className
-  }
+    let status = (orderStatus) ? 'Header_order' : '';
+    let success = (orderSuccess) ? 'Header_success' : '';
+    let className = `container Header ${status} ${success}`;
+    return className;
+  };
 
   return (
-
     <header className={getHeaderClassName()}>
       <div className="Header-Logo">
         <span>Лого</span>
@@ -61,15 +60,18 @@ export default function Header(props) {
         </ul>
       </nav>
 
-      {!orderStatus &&
+      {!orderStatus && !orderSuccess &&
         <h1 className="Header-Title">
           <span>Вся жизнь -</span>
           <span className='bold-text'>путешествие!</span>
         </h1>}
 
-      <SearchForm />
-      <Progressbar />
+      {!orderSuccess &&
+        <SearchForm />}
 
+      {!orderSuccess &&
+        <Progressbar />
+      }
     </header>
   )
-}
+};

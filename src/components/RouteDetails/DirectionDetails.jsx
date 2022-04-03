@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import moment from 'moment';
+
 export default function DirectionDetails({ type }) {
   return (
     <>
@@ -18,7 +19,6 @@ export default function DirectionDetails({ type }) {
       </div>
 
       <div className='Details-time-info'>
-
         <div className='Details-time-container forward-direction'>
           <div className='time-wrapper departure-time'>
             <span className="route-time">{moment(type.from.datetime).format('hh:mm')}</span>
@@ -34,7 +34,6 @@ export default function DirectionDetails({ type }) {
           </div>
         </div>
 
-
         <div className='Details-route-info'>
           <div className='Details-route departure-point'>
             <span className="route-city">{type.from.city.name}</span>
@@ -45,8 +44,7 @@ export default function DirectionDetails({ type }) {
             <span className="route-station">{type.to.railway_station_name} вокзал</span>
           </div>
         </div>
-
       </div>
     </>
   )
-}
+};

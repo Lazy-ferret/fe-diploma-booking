@@ -4,7 +4,6 @@
     height: 36rem;
     right: 14.5rem;
     bottom: 0;
-
     background: rgba(41, 41, 41, 0.8);
 }
 
@@ -13,7 +12,6 @@
     height: 22rem;
     bottom: 4.4rem;
     right: 13.5rem;
-
     background: rgba(41, 41, 41, 0.69);
 }
 
@@ -25,30 +23,22 @@
     margin-left: 2rem;
 }
 
-
 .Header-SearchForm {
     display: block;
     margin-top: 4rem;
     margin-left: 2rem;
-
 }
-
 
 .SearchForm-Section_title {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 2.2rem;
-
     color: #FFFFFF;
 }
 
 .SearchForm-Input_container {
     display: flex;
     margin-bottom: 3.7rem;
-
-
-
-
 }
 
 .SearchForm-Input {
@@ -56,23 +46,32 @@
     width: 20rem;
     height: 3.5rem;
     padding-left: 1rem;
-
     background: #FFFFFF;
     border-radius: 0.2rem;
     background-repeat: no-repeat;
     background-position-y: center;
-
     font-style: normal;
     font-weight: normal;
     font-size: 1.1rem;
     line-height: 1.3rem;
     font-variant: small-caps;
-
     color: #292929;
 }
 
-.ant-select-selection-search-input {
-    border:red;
+.ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+    height: 100%;
+    background-image: url(../../img/direction-icon.png);
+    background-repeat: no-repeat;
+    background-position-x: 15.5rem;
+    background-position-y: 0.7rem;
+    text-transform: capitalize;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    padding-top: 0.7rem;
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
 .Input_direction {
@@ -97,18 +96,13 @@
     background-repeat: no-repeat;
 }
 
-
-
 .SerchForm-Button {
     display: block;
     margin: 2.6rem 2.5rem auto auto;
-
     width: 20rem;
     height: 3.7rem;
-
     background: #FFA800;
     border-radius: 0.3rem;
-
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -130,14 +124,11 @@
 
 .Header-SearchForm-Order_container .SerchForm-Button {
     margin: 0 4rem auto auto;
-
 }
-
 
 .react-datepicker-wrapper {
     width: 20rem;
     height: 3.7rem;
-
     position: relative;
 }
 
@@ -154,7 +145,6 @@
 .react-datepicker__header {
     height: 3rem;
     padding-top: 0.5rem;
-
 }
 
 .react-datepicker__week {

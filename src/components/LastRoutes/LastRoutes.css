@@ -15,7 +15,6 @@
 .LastTickets-Item {
     display: flex;
     flex-direction: column;
-
     margin-top: 1rem;
     padding: 1rem;
     background-color: #FFFFFF;
@@ -29,7 +28,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 .departure-station {
     display: flex;
@@ -48,7 +46,6 @@
     font-weight: normal;
     font-size: 1.25rem;
     line-height: 1.4rem;
-
     color: #292929;
 }
 
@@ -65,7 +62,6 @@
 
 .LastTickets-Item-details {
     margin-top: 2.3rem;
-
     display: flex;
     justify-content: space-between;
 }
@@ -84,7 +80,6 @@
     font-size: 1rem;
     line-height: 1.2rem;
     text-align: right;
-
     color: #928F94;
 }
 
@@ -92,7 +87,6 @@
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 2.6rem;
-
     color: #FFA800;
 }
 

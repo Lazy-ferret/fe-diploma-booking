@@ -1,0 +1,162 @@
+.Confirmation-Info {
+    margin-bottom: 3rem;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.Confirmation-Info-fieldTitle {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.Confirmation-Info_data {
+    padding: 2rem;
+    border-bottom: 1px solid #928F94;
+}
+
+.Confirmation-Info-Route {
+    display: flex;
+}
+
+.Confirmation-Change-btn {
+    margin-top: 1rem;
+    width: 14.5rem;
+    height: 2.4rem;
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #292929;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Confirmation-Change-btn:hover {
+    color: #FFA800;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Confirmation-Change-btn:active {
+    background: #FFA800;
+    color: #292929;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Confirmation-Info-Passengers {
+    display: flex;
+}
+
+.Passengers-list {
+    width: 42.3rem;
+    border-right: 1px dashed #E5E5E5;
+}
+
+.Passengers-info {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.Passengers-info:not(:first-of-type) {
+    border-top: 1px dashed #E5E5E5;
+    padding-top: 2rem;
+}
+
+.Passengers-info:not(:last-of-type) {
+    padding-bottom: 2rem;
+}
+
+.Passengers-info-icon {
+    width: 10rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.passenger_icon {
+    width: 4.25rem;
+    height: 4.25rem;
+    background-image: url(../../img/passenger-icon_circle.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Passengers-personalData-fullName {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-transform: capitalize;
+}
+
+.Passengers-personalData_field {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+}
+
+.passenger-ticketType {
+    margin-top: 1rem;
+}
+
+.personalData-fieldTitle {
+    margin-right: 0.5rem;
+}
+
+.Confirmation-totalPrice {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Confirmation-totalPrice_wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.Confirmation-totalPrice_value {
+    font-weight: bold;
+}
+
+.Confirmation-totalPrice_rouble {
+    color: #928F94;
+}
+
+.Confirmation-Info-Payment {
+    display: flex;
+}
+
+.Confirmation-Info-Payment_type {
+    width: 42.3rem;
+    border-right: 1px dashed #E5E5E5;
+}
+
+.Confirmation-Info-Payment_type {
+    padding-left: 2rem;
+    padding-top: 2.75rem;
+    padding-bottom: 4.75rem;
+}
+
+.Confirmation-Change {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

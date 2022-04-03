@@ -8,11 +8,7 @@ import {
     SET_DATE_END,
     CLEAR_DATE_END,
     SET_FILTERS,
-    CLEAR_FILTERS,
-
-    // SET_SEARCHING_ROUTE,
-    
-
+    CLEAR_FILTERS
 } from "../actions/actionTypes";
 
 const initialState = {
@@ -37,11 +33,8 @@ const initialState = {
         end_departure_hour_to: '',
         end_arrival_hour_from: '',
         end_arrival_hour_to: '',
-    },
-    //   limit: 5,
-    //   sort: 'date',
-    //   offset: 0,
-}
+    }
+};
 
 export default function searchingRouteReducer(state = initialState, action) {
     switch (action.type) {
@@ -67,7 +60,6 @@ export default function searchingRouteReducer(state = initialState, action) {
                 ...state,
                 toCity: initialState.toCity
             };
-
         case SET_DATE_START:
             const { dateStart } = action.payload;
             return {
@@ -79,7 +71,6 @@ export default function searchingRouteReducer(state = initialState, action) {
                 ...state,
                 dateStart: initialState.dateStart
             };
-
         case SET_DATE_END:
             const { dateEnd } = action.payload;
             return {
@@ -91,28 +82,17 @@ export default function searchingRouteReducer(state = initialState, action) {
                 ...state,
                 dateEnd: initialState.dateEnd
             };
-
-            case SET_FILTERS:                
-                return {
-                    ...state,
-                    filters: {...state.filters, ...action.payload}                   
-                };
-            case CLEAR_FILTERS:
-                return {
-                    ...state,
-                    filters: initialState.filters
-                };
-
-
-        // case SET_SEARCHING_ROUTE:
-        //     const { searchingRoute } = action.payload;
-        //     return {
-        //         ...state,
-        //         searchingRoute
-        //     };
-        
+        case SET_FILTERS:
+            return {
+                ...state,
+                filters: { ...state.filters, ...action.payload }
+            };
+        case CLEAR_FILTERS:
+            return {
+                ...state,
+                filters: initialState.filters
+            };
         default:
             return state;
     }
-}
-
+};

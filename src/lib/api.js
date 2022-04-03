@@ -1,4 +1,4 @@
-const REACT_APP_BASE_URL = 'https://fe-diplom.herokuapp.com'
+const REACT_APP_BASE_URL = 'https://fe-diplom.herokuapp.com';
 
 export const requestLastRoutes = async () => {
     const response = await fetch(`${REACT_APP_BASE_URL}/routes/last`);
@@ -6,7 +6,6 @@ export const requestLastRoutes = async () => {
         throw new Error(response.statusText);
     };
     const data = await response.json();
-    console.log(data);
     return data;
 }
 
@@ -16,30 +15,19 @@ export const requestCities = async (name) => {
         throw new Error(response.statusText);
     };
     const data = await response.json();
-    return data    
+    return data
 }
 
 export const requestRoutes = async (params) => {
     let routesURL = `${REACT_APP_BASE_URL}/routes?from_city_id=${params.from_city_id}&to_city_id=${params.to_city_id}`
     if (params.date_start) routesURL = `${routesURL}&date_start=${params.date_start}`
     if (params.date_end) routesURL = `${routesURL}&date_end=${params.date_end}`
-    // if (params.filters.have_first_class) routesURL += `&have_first_class=true`
-
-    // {
-    //      routesURL += `&have_first_class=${have_first_class}`;
-    //      routesURL += `&have_second_class=${have_second_class}`;
-    //      routesURL += `&have_third_class=${have_third_class}`;
-    //      routesURL += `&have_fourth_class=${have_fourth_class}`;
-    //      routesURL += `&have_wifi=${have_wifi}`;
-    //      routesURL += `&is_express=${is_express}`;
-    // }
-
     const response = await fetch(routesURL);
     if (!response.ok) {
         throw new Error(response.statusText);
     };
     const data = await response.json();
-    return data    
+    return data
 }
 
 export const requestSeats = async (id, filters) => {
@@ -50,18 +38,13 @@ export const requestSeats = async (id, filters) => {
     if (filters.have_second_class) seatsURL += `&have_second_class=true`
     if (filters.have_third_class) seatsURL += `&have_third_class=true`
     if (filters.have_fourth_class) seatsURL += `&have_fourth_class=true`
-    
-    console.log(seatsURL)
-       
     const response = await fetch(seatsURL);
     if (!response.ok) {
         throw new Error(response.statusText);
     };
     const data = await response.json();
-    console.log(data) 
-    return data    
+    return data
 }
-
 
 export const setSubscription = async (email) => {
     const response = await fetch(`${REACT_APP_BASE_URL}/subscribe?email=${email}`, {
@@ -74,3 +57,21 @@ export const setSubscription = async (email) => {
     };
 }
 
+export const setOrder = async (id, seats, user) => {
+    const data = {
+        user: user,
+        departure: {
+            route_direction_id: id,
+            seats: seats
+        }
+    }
+    const response = await fetch(`${REACT_APP_BASE_URL}/order`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    };
+    console.log(data)
+}

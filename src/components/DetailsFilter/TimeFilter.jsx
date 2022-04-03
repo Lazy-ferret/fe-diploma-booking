@@ -6,23 +6,28 @@ import { setFilters } from '../../actions/searchingRoute';
 
 export default function TimeFilter({ type }) {
     const dispatch = useDispatch();
-    
     const minTime = 0;
     const maxTime = 1440;
 
     const onDepartureChange = (value) => {
-        dispatch(setFilters({ [`${type}_departure_hour_from`]: value[0], [`${type}_departure_hour_to`]: value[1] }))
-    }
+        dispatch(setFilters({
+            [`${type}_departure_hour_from`]: value[0], [`${type}_departure_hour_to`]: value[1]
+        }))
+    };
 
     const onArrivalChange = (value) => {
-        dispatch(setFilters({ [`${type}_arrival_hour_from`]: value[0], [`${type}_arrival_hour_to`]: value[1] }))
-    }
+        dispatch(setFilters({
+            [`${type}_arrival_hour_from`]: value[0], [`${type}_arrival_hour_to`]: value[1]
+        }))
+    };
 
     const getFormatedTime = (value) => {
         const hour = Math.floor(value / 60);
         const minutes = value - hour * 60;
-        return typeof value !== 'undefined' ? `${`0${hour}`.slice(-2)}:${`0${minutes}`.slice(-2)}` : '';
-    }
+        return typeof value !== 'undefined'
+            ? `${`0${hour}`.slice(-2)}:${`0${minutes}`.slice(-2)}`
+            : '';
+    };
 
     return (
         <div className="Details-TimeFilter-slider_container">
@@ -47,7 +52,7 @@ export default function TimeFilter({ type }) {
 
             <div className="Details-TimeFilter-slider arrival">
                 <div className="slider-title arrival">Время прибытия</div>
-               <Slider
+                <Slider
                     className="PriceFilter-slider_item"
                     min={minTime}
                     max={maxTime}
@@ -57,7 +62,7 @@ export default function TimeFilter({ type }) {
                     tooltipPlacement="bottom"
                     tipFormatter={(value) => getFormatedTime(value)}
                     onChange={onArrivalChange}
-                />                 
+                />
                 <div className="Details-TimeFilter-time">
                     <span className="time-min">{getFormatedTime(minTime)}</span>
                     <span className="time-max">{getFormatedTime(maxTime)}</span>
@@ -65,6 +70,4 @@ export default function TimeFilter({ type }) {
             </div>
         </div>
     )
-}
-
-
+};

@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './RouteDetails.css';
 import { Collapse } from 'antd';
 import moment from 'moment';
-import TimeFilter from '../DetailsFilter/TimeFilter';
 import DirectionDetails from './DirectionDetails';
 import { useSelector } from 'react-redux';
 import PassengersDetails from './PassengersDetails';
@@ -10,12 +9,11 @@ import PassengersDetails from './PassengersDetails';
 export default function RouteDetails(props) {
     const { Panel } = Collapse;
     const { departure, arrival } = useSelector(state => state.routes.currentRoute);
-    const { totalPrice } = useSelector(state => state.tickets)
+    const { totalPrice } = useSelector(state => state.tickets);
 
     return (
         <section className="Details Details-Passengers">
             <div className="Details-Passengers-title">Детали поездки</div>
-
             <Collapse
                 ghost
                 expandIconPosition="right"
@@ -69,7 +67,6 @@ export default function RouteDetails(props) {
                 </Panel>
             </Collapse>
 
-
             <div className="Details-Passengers-totalPrice">
                 <div className='totalPrice-title'>Итог</div>
                 <div className="totalPrice-price">
@@ -77,8 +74,6 @@ export default function RouteDetails(props) {
                     <span className='totalPrice-price_rouble'> ₽</span>
                 </div>
             </div>
-
         </section>
     )
-}
-
+};

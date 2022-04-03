@@ -6,10 +6,9 @@ import RouteDetails from '../RouteDetails/RouteDetails';
 import './AsideSection.css';
 
 export default function AsideSection(props) {
-  const { orderStatus } = useSelector(state => state.order)
+  const { orderStatus } = useSelector(state => state.order);
 
   return (
-
     <aside className="Order-Details">
       {(orderStatus === 1)
         && <DetailsFilter />}
@@ -19,9 +18,6 @@ export default function AsideSection(props) {
 
       {(orderStatus > 1)
         && <RouteDetails />}
-
-
     </aside>
-
   )
-}
+};

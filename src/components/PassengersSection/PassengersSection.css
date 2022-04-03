@@ -1,8 +1,6 @@
 .Passenger-Info {
     min-height: 6rem;
-
     margin-bottom: 3rem;
-
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -13,6 +11,26 @@
     background-color: #F9F9F9;
 }
 
+.Order-Passengers-container .ant-collapse, .Order-Passengers-container .ant-collapse-item {
+    margin-bottom: 3rem;
+}
+
+.ant-collapse>.ant-collapse-item.ant-collapse-no-arrow>.ant-collapse-header {
+    padding-left: 0;
+}
+
+.ant-collapse-ghost>.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box {
+    padding-top: 0;
+}
+
+.Passenger-Info .ant-select {
+    padding-left: 0;
+}
+
+.Passenger-Info .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    height: 100%;
+}
+
 .Passenger-Info-title {
     padding: 2.5rem 1.5rem;
     display: flex;
@@ -20,13 +38,17 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: #292929;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .Passenger-Info-btn {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -67,7 +89,6 @@
     padding: 2rem;
     border-top: 1px dashed #928F94;
     background-color: #FFFFFF;
-
     font-weight: normal;
     font-size: 1.1rem;
     line-height: 1.3rem;
@@ -76,14 +97,12 @@
 
 .personalData_inputField {
     margin-top: 0.5rem;
-
     border: 1px solid #928F94;
     box-sizing: border-box;
     border-radius: 0.3rem;
     height: 3.1rem;
     text-align: start;
     padding-left: 0.5rem;
-
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -103,7 +122,6 @@
     height: 0.5rem;
     top: 1.4rem;
     right: 1rem;
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -121,6 +139,13 @@
     border-radius: 0.3rem;
     position: absolute;
     top: 5rem;
+}
+
+.fullName-item_wrapper, .gender_wrapper, .birthday_wrapper, .documentData-type_fieldName, .passport-item_wrapper {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
 }
 
 .personalData-fullName {
@@ -145,6 +170,59 @@
     align-items: center;
 }
 
+.Passenger-Info .ant-radio-button-wrapper {
+    width: 50%;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.Passenger-Info .ant-radio-button-wrapper:first-child {
+    border: 1px solid #928f94;
+    border-radius: 5px 0 0 5px;
+}
+
+.Passenger-Info .ant-radio-button-wrapper:last-child {
+    border: 1px solid #928f94;
+    border-radius: 0 5px 5px 0;
+}
+
+.Passenger-Info .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background: #ffa800;
+    border: 1px solid #928f94;
+    color: #000000;
+}
+
+.Passenger-Info .ant-radio-button-wrapper.ant-radio-button-wrapper-checked.gender_value-btn {
+    border: 1px solid #928f94;
+}
+
+.ant-radio-button.ant-radio-button-checked {
+    background: #ffa800;
+    border: 1px solid #928f94;
+}
+
+.Passenger-Info .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+    border: 1px solid #928f94;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.Passenger-Info .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: transparent;
+}
+
+.Passenger-Info .ant-radio-button-wrapper:focus-within {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.Passenger-Info .ant-radio-button-wrapper:not(:first-child)::before {
+    background-color: #928f94;
+}
+
 .gender_value-btn {
     width: 50%;
     font-weight: 900;
@@ -154,7 +232,6 @@
     color: #000000;
     text-align: center;
     padding: 0.5rem 0;
-
 }
 
 .gender_value-btn:first-of-type {
@@ -172,11 +249,10 @@
 }
 
 .birthday_wrapper {
-
     margin-left: 2rem;
 }
 
-.personalData-mobility {
+.Passenger-Info .ant-checkbox-wrapper {
     margin-top: 3rem;
     font-weight: normal;
     font-size: 1.1rem;
@@ -186,11 +262,18 @@
     align-items: center;
 }
 
-.mobility_checkbox {
+.Passenger-Info .ant-checkbox-inner {
     height: 1.75rem;
     width: 1.75rem;
     margin-right: 1rem;
     margin-top: 0;
+    border: 1px solid #928F94;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+}
+
+.Passenger-Info .ant-checkbox-input {
+    border: 1px solid #928F94;
 }
 
 .Passenger-Info-documentData {
@@ -199,7 +282,6 @@
 
 .documentData_inputFields {
     display: flex;
-
 }
 
 .documentData-type_document {
@@ -207,8 +289,10 @@
     min-width: 13rem;
     padding-top: 0.5rem;
     padding-right: 6rem;
+}
 
-
+.documentData-type_document .ant-select-selector {
+    width: 100%;
 }
 
 .documentData-type_document::before {
@@ -219,7 +303,6 @@
     height: 0.5rem;
     top: 1.4rem;
     right: 1rem;
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -228,9 +311,7 @@
 
 .passport-item_wrapper {
     margin-left: 2rem;
-
 }
-
 
 .passport-item_input {
     width: 13rem;
@@ -243,16 +324,12 @@
 
 .Passenger-Info-nextPassenger {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
-
-
 
 .Passenger-Info-nextPassenger.error {
     background: rgba(255, 61, 0, 0.38);
     justify-content: start;
-    /* height: 7.5rem; */
-
     font-weight: normal;
     font-size: 1.1rem;
     line-height: 1.3rem;
@@ -272,7 +349,6 @@
 .nextPassenger-btn {
     width: 19rem;
     height: 3.25rem;
-
     border: 1px solid #292929;
     box-sizing: border-box;
     border-radius: 0.3rem;
@@ -290,7 +366,6 @@
 
 .nextPassenger-successMsg_wrapper {
     display: flex;
-
 }
 
 .nextPassenger-successMsg {
@@ -300,4 +375,10 @@
     font-size: 1.1rem;
     line-height: 1.3rem;
     color: #FFFFFF;
+}
+
+.Passenger-Info .documentData-type_document .ant-select-selector {
+    border: none;
+    width: 100%;
+    padding-top: 0;
 }

@@ -1,6 +1,5 @@
 .Details {
     margin-left: 16rem;
-
     width: 22.5rem;
     background-color: #3E3C41;
 }
@@ -8,7 +7,6 @@
 .Details-DateFilter {
     border-bottom: 1px solid #E5E5E5;
     padding-top: 1.6rem;
-
 }
 
 .DateFilter-Input_container {
@@ -24,13 +22,11 @@
 }
 
 .DateFilter-Input {
-    /* width: 100%; */
     width: 18.5rem;
     height: 2.6rem;
     margin-bottom: 1.6rem;
     box-sizing: border-box;
     padding-left: 1rem;
-
     background: #FFFFFF;
     border-radius: 0.2rem;
     background-repeat: no-repeat;
@@ -39,7 +35,6 @@
     background-image: url(../../img/date-icon.png);
     background-position-x: 16rem;
 }
-
 
 .DetailsFilter-List {
     padding-bottom: 1.8rem;
@@ -92,7 +87,6 @@
 .ant-switch-checked {
     background: #FCDC9D;
 }
-
 
 /* PRICE FILTER STYLES */
 
@@ -151,7 +145,7 @@
 }
 
 .ant-tooltip {
-    margin-top: 2rem;    
+    margin-top: 2rem;
 }
 
 .ant-tooltip-inner {
@@ -196,39 +190,31 @@
 }
 
 /* TIME FILTER STYLES */
+
 .Details-Direction {
     border-top: 1px solid #E5E5E5;
     display: flex;
     padding: 2rem;
     background-color: #3E3C41;
     width: 100%;
-
 }
 
 .ant-collapse>.ant-collapse-item>.ant-collapse-header {
     padding: 0;
 }
 
-/* .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
-    top: calc(50% + 2px);
-  }
-   */
 .ant-collapse-ghost>.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box {
     padding: 20px 0 40px;
 }
 
-
-
 .Details-Direction-Icon {
     margin-top: 0.3rem;
-
 }
 
 .Details-Direction-Icon {
     width: 2rem;
     height: 2rem;
     background-repeat: no-repeat;
-
 }
 
 .Details-Direction-Icon.forward-direction {

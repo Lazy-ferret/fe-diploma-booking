@@ -1,0 +1,176 @@
+.Order-Container_success {
+    position: relative;
+    min-height: 55rem;
+}
+
+.Order-Success-Modal_container {
+    position: absolute;
+    z-index: 99;
+    top: -20rem;
+    left: 16rem;
+}
+
+.Success-Modal-title {
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5.25rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.Success-Modal {
+    width: 88rem;
+    min-height: 6rem;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.Modal-orderDetails {
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+    color: #3E3C41;
+}
+
+.Modal-orderDetails_field {
+    display: flex;
+}
+
+.orderDetails_fieldName {
+    margin-right: 1rem;
+}
+
+.price_fieldName, .price_fieldValue-rouble {
+    font-weight: normal;
+    color: #928F94;
+}
+
+.Modal-ticketsHint {
+    background-color: #F4F3F6;
+    height: 20rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: #292929;
+}
+
+.ticketsHint-List {
+    display: flex;
+    margin: 0 20rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ticketsHint-Item {
+    width: 11rem;
+    margin-top: 11rem;
+}
+
+.ticketsHint-Item::before {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    width: 8rem;
+    height: 8rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hint-mail::before {
+    background-image: url(../../img/tickets-hint_mail.png);
+}
+
+.hint-print::before {
+    background-image: url(../../img/tickets-hint_print.png);
+}
+
+.hint-show::before {
+    background-image: url(../../img/tickets-hint_show.png);
+}
+
+.Modal-successMsg {
+    margin: 6rem auto 8rem 13rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.Modal-successMsg-client {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+}
+
+.Modal-successMsg-message {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Modal-successMsg-gratitude {
+    font-weight: bold;
+}
+
+.Modal-rateApp {
+    padding: 3.75rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 168, 0, 0.88);
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.Modal-toMainBtn {
+    width: 21rem;
+    height: 3.75rem;
+    border: 1px solid #3E3C41;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background: rgba(255, 168, 0, 0.88);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Modal-rateApp-field {
+    display: flex;
+}
+
+.rateApp-field_name {
+    margin-top: 1rem;
+}
+
+.rateApp-rating_list {
+    display: flex;
+}
+
+.rateApp-rating_item {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../../img/star.png);
+}
+
+.Modal-toMainBtn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.successMsg-client_name {
+    text-transform: capitalize;
+}

@@ -1,0 +1,131 @@
+.personalData-fieldName {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #928F94;
+}
+
+.Payment-Info {
+    min-height: 6rem;
+    margin-bottom: 3rem;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.Payment-Info_data {
+    padding: 2rem;
+    background-color: #FFFFFF;
+}
+
+.Payment-Info_data:not(:first-of-type) {
+    border-top: 1px dashed #928F94;
+}
+
+.Payment-Info-fieldTitle {
+    background: #F9F9F9;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.Payment-personalData_field {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #292929;
+}
+
+.phone-input, .email-input {
+    width: 22.5rem;
+}
+
+.chooseType-checkbox {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+.chooseType-checkbox.checked {
+    border: 1px solid #FFA800;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../img/checked_yellow.png);
+}
+
+.chooseType-availableTypes {
+    margin-top: 1.75rem;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #292929;
+}
+
+.availableTypes-item {
+    width: 12rem;
+}
+
+.Payment-Info-chooseType:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.Order-Payment-btn_container {
+    margin-top: 7.25rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Order-Payment-btn {
+    width: 20rem;
+    height: 3.75rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FFA800;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.Order-Payment-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Order-Payment-btn:active {
+    border: 1px solid #FFA800;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFA800;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Payment-Info .ant-checkbox-wrapper {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #292929;
+    display: flex;
+    align-items: center;
+}
+
+.Payment-Info .ant-checkbox-inner {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    border: 1px solid #928F94;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+}
+
+.Payment-Info .ant-checkbox-input {
+    border: 1px solid #928F94;
+}

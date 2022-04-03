@@ -1,6 +1,6 @@
-import React from 'react'
-import CarSecondClass from './CarSecondClass'
-import Seat from './Seat'
+import React from 'react';
+import CarSecondClass from './CarSecondClass';
+import Seat from './Seat';
 
 export default function CarThirdClass({ seatsAvailable, changeSeatsList }) {
   return (
@@ -41,8 +41,6 @@ export default function CarThirdClass({ seatsAvailable, changeSeatsList }) {
           <Seat number={48} seatsAvailable={seatsAvailable} changeSeatsList={changeSeatsList} />
         </div>
       </div>
-
     </>
   )
-}
-
+};

@@ -1,12 +1,10 @@
 .Result-Routes-item {
     min-height: 16rem;
     margin-top: 3rem;
-
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
     display: flex;
 }
 
@@ -15,7 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-color: #E4E0E9;
 }
 
@@ -28,23 +25,18 @@
 
 .Route-train-number {
     margin-top: 1rem;
-
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.75rem;
     text-align: center;
-
     color: #3E3C41;
 }
 
 .Route-train-route {
     margin-top: 1rem;
-
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.2rem;
-
-
     color: #292929;
 }
 
@@ -59,7 +51,7 @@
 
 .route-direction-arrow {
     width: 100%;
-    height: 100%;    
+    height: 100%;
     background-repeat: no-repeat;
 }
 
@@ -70,7 +62,6 @@
 .arrow-left {
     background-image: url('../../img/arrow-left-yellow.png');
 }
-
 
 .Route-time-info {
     width: 30rem;
@@ -98,7 +89,6 @@
     display: flex;
     flex-direction: column;
     width: 35%;
-
     font-weight: bold;
     color: #000000;
     font-size: 1rem;
@@ -129,7 +119,6 @@
 .route-duration {
     font-size: 1.1rem;
     line-height: 1.3rem;
-
     color: #C4C4C4;
 }
 
@@ -139,7 +128,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .Route-price-classes_list {
@@ -152,8 +140,6 @@
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
-
-
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.2rem;
@@ -189,27 +175,24 @@
 .Route-ChooseSeats-wrapper {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-
     display: flex;
     flex-direction: column;
 }
 
 .details-icon_list {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .Route-ChooseSeats-btn {
     margin-top: 1rem;
     width: 14.25rem;
     height: 2.4rem;
-
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.75;
     text-align: center;
     color: #FFFFFF;
-
     background-color: #FFA800;
     border-radius: 0.3rem;
     border: 0;
@@ -228,30 +211,26 @@
 
 .ant-pagination {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 6rem;
-    /* margin-bottom: 6rem; */
 }
 
-.ant-pagination-item, .ant-pagination-prev, .ant-pagination-next  {
+.ant-pagination-item, .ant-pagination-prev, .ant-pagination-next {
     width: 5.25rem;
     height: 4.7rem;
     margin-left: 2.2rem;
-
     border: 2px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 0.3rem;
-
     text-align: center;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: #928F94;
-
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .ant-pagination-item-active {
     color: #FFFFFF;

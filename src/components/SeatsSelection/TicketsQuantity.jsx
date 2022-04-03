@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Form, Input } from 'antd';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setPassengersAge, setTicketsQuantity } from '../../actions/tickets';
 
 export default function TicketsQuantity(props) {
-    const { TicketsQuantity } = useSelector(state => state.tickets);
     const dispatch = useDispatch();
-
     let maxTickets = 5;
     const [adultTickets, setAdultTickets] = useState(0);
     const [childTickets, setChildTickets] = useState(0);
     const [infantTickets, setInfantTickets] = useState(0);
     let availableTickets = maxTickets - adultTickets - childTickets - infantTickets;
-    let totalTickets = Number(adultTickets + childTickets + infantTickets)
+    let totalTickets = Number(adultTickets + childTickets + infantTickets);
 
     useEffect(() => {
-        console.log(totalTickets)
         dispatch(setTicketsQuantity(totalTickets));
-        dispatch(setPassengersAge(adultTickets, childTickets, infantTickets))
-    }, [totalTickets]);
+        dispatch(setPassengersAge(adultTickets, childTickets, infantTickets));
+    }, [totalTickets, adultTickets, childTickets, infantTickets, dispatch]);
 
     return (
         <div className='ChooseSeats-TicketsQuantity'>
@@ -68,4 +65,4 @@ export default function TicketsQuantity(props) {
             </Form>
         </div>
     )
-}
+};

@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { setCarType } from '../../actions/tickets'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setCarType } from '../../actions/tickets';
 
 export default function CarTypeSelection(props) {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const onCarTypeClick = (e, type) => {
-        const container = e.target.closest('.CarType-container')
-        const active = container.querySelector('.active')
-        if (active) active.classList.remove('active')
-        e.target.closest('.CarType-type').classList.add('active')
-        dispatch(setCarType(type))
-    }
+        const container = e.target.closest('.CarType-container');
+        const active = container.querySelector('.active');
+        if (active) active.classList.remove('active');
+        e.target.closest('.CarType-type').classList.add('active');
+        dispatch(setCarType(type));
+    };
 
     return (
         <div className='ChooseSeats-CarType'>
@@ -36,4 +36,4 @@ export default function CarTypeSelection(props) {
             </div>
         </div>
     )
-}
+};

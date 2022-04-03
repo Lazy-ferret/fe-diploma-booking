@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
 import Footer from './components/Footer/Footer';
 import OrderPage from './components/OrderPage/OrderPage';
+import SuccessPage from './components/SuccessPage/SuccessPage';
 
 function App() {
   return (
@@ -13,11 +14,10 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/order' element={<OrderPage />} />
-          
+          <Route path='/success' element={<SuccessPage />} />
         </Routes>
-        <Footer path='/contacts'/>
+        <Footer path='/contacts' />
       </div>
-
     </Router>
   );
 }

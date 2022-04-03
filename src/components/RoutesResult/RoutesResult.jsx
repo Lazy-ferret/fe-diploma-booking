@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RouteItem from '../RouteItem/RouteItem';
 import './RoutesResult.css';
@@ -8,43 +9,40 @@ import { setMaxPrice, setMinPrice } from '../../actions/routes';
 export default function RoutesResult(props) {
     const { items } = useSelector(state => state.routes.items);
     const { total_count } = useSelector(state => state.routes.items);
-    const [showItems, setShowItems] = useState(5)
+    const [showItems, setShowItems] = useState(5);
     const dispatch = useDispatch();
 
     const getMinPrice = () => {
-        let arrMin = []
-        items && items.map((item) => { arrMin.push(item.min_price) })
-        let result = Math.min.apply(null, arrMin)
-        console.log(result)
-        return result !== Infinity ? result : 0
+        let arrMin = [];
+        items && items.map((item) => { return arrMin.push(item.min_price) });
+        let result = Math.min.apply(null, arrMin);
+        return result !== Infinity ? result : 0;
     }
 
     const getMaxPrice = () => {
-        let arrPrices = []
-        const arrValues = []
-        items && items.map((item) => { arrPrices.push(item.departure.price_info) })
+        let arrPrices = [];
+        const arrValues = [];
+        items && items.map((item) => { return arrPrices.push(item.departure.price_info) });
         arrPrices.length > 0 && arrPrices.forEach((type) => {
-            const values = Object.values(type)
+            const values = Object.values(type);
             values.forEach((value) => {
-                if (value !== null) arrValues.push(Math.max.apply(null, Object.values(value)))
-            })
-        })
-        let result = Math.max.apply(null, arrValues)
-        console.log(result)
-         return result !== -Infinity ? result : 0
-    }
+                if (value !== null) arrValues.push(Math.max.apply(null, Object.values(value)));
+            });
+        });
+        let result = Math.max.apply(null, arrValues);
+        return result !== -Infinity ? result : 0;
+    };
 
-
-    useEffect(() => {        
-        dispatch(setMinPrice(getMinPrice()))
-        dispatch(setMaxPrice(getMaxPrice()))   
+    useEffect(() => {
+        dispatch(setMinPrice(getMinPrice()));
+        dispatch(setMaxPrice(getMaxPrice()));
     }, [items]);
 
     const onClick = (e) => {
-        e.target.parentElement.querySelector('.active').classList.remove('active')
+        e.target.parentElement.querySelector('.active').classList.remove('active');
         e.target.classList.add('active');
-        setShowItems(e.target.textContent)
-    }
+        setShowItems(e.target.textContent);
+    };
 
     return (
         <section className="Order-Result">
@@ -89,11 +87,6 @@ export default function RoutesResult(props) {
                 total={total_count * 10 / showItems}
                 hideOnSinglePage
             />}
-
         </section>
     )
-}
-
-
-
-
+};

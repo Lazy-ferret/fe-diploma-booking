@@ -15,14 +15,12 @@ export const reviewsList = [
         avatar: avatar1,
         name: 'Екатерина Вальнова',
         content: 'Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/ д билет, даже если вы заказываете онлайн билет впервые.',
-
     },
     {
         id: 2,
         avatar: avatar2,
         name: 'Евгений Стрыкало',
         content: 'СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.',
-
     },
 ];
 
@@ -42,7 +40,7 @@ export const featuresList = [
         src: coffee,
         alt: 'coffee-icon'
     }
-]
+];
 
 export const featuresFilterList = [
     {
@@ -68,7 +66,7 @@ export const featuresFilterList = [
         title: 'Люкс',
         src: firstClassIcon,
         alt: 'first_class-icon'
-    },      
+    },
     {
         name: 'have_wifi',
         title: 'WI-FI',
@@ -80,6 +78,5 @@ export const featuresFilterList = [
         title: 'Экспресс',
         src: express,
         alt: 'express-icon'
-    } 
-]
-
+    }
+];

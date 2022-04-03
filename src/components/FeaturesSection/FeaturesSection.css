@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 36rem;
     padding-top: 4.3rem;
-
     background-image: url(../../img/features_background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,14 +12,12 @@
     display: inline-block;
     max-width: 21.6rem;
     margin-left: 15.5rem;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 2.2rem;
     line-height: 2.6rem;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
@@ -29,14 +26,11 @@
     box-sizing: border-box;
     border-radius: 0.3rem;
     background-color: rgba(0, 0, 0, 0);
-
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.75rem;
-
     text-align: center;
     color: #FFFFFF;
-
     width: 21.2rem;
     height: 3.7rem;
     margin-left: 45.5rem;
@@ -65,12 +59,10 @@
     width: 14.5rem;
     margin-top: 17rem;
     list-style: none;
-
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.75rem;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -80,7 +72,6 @@
     top: 4.75rem;
     width: 12rem;
     height: 12rem;
-
     background-position: center center;
     background-repeat: no-repeat;
 }

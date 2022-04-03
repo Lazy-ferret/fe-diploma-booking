@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import moment from 'moment';
 
-export default function CurrentTrainInfo({type}) {
-    
+export default function CurrentTrainInfo({ type }) {
     return (
         <div className='ChooseSeats-Route-info'>
             <div className='ChooseSeats-train-info'>
@@ -22,7 +21,6 @@ export default function CurrentTrainInfo({type}) {
                     </div>
                 </div>
             </div>
-
             <div className='ChooseSeats-time-info'>
                 <div className='ChooseSeats-time-container forward-direction'>
                     <div className='ChooseSeats-time-wrapper departure-time'>
@@ -38,7 +36,6 @@ export default function CurrentTrainInfo({type}) {
                     </div>
                 </div>
             </div>
-
             <div className="ChooseSeats-duration_wrapper">
                 <div className="ChooseSeats-duration-icon"></div>
                 <div className="ChooseSeats-duration">
@@ -48,5 +45,4 @@ export default function CurrentTrainInfo({type}) {
             </div>
         </div>
     )
-}
-
+};

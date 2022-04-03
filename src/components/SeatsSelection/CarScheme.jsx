@@ -1,44 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import CarFirstClass from './Cars/CarFirstClass'
-import CarFourthClass from './Cars/CarFourthClass'
-import CarSecondClass from './Cars/CarSecondClass'
-import CarThirdClass from './Cars/CarThirdClass'
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import CarFirstClass from './Cars/CarFirstClass';
+import CarFourthClass from './Cars/CarFourthClass';
+import CarSecondClass from './Cars/CarSecondClass';
+import CarThirdClass from './Cars/CarThirdClass';
 import './Cars/Cars.css';
-import { clearsetSelectedSeats, setSelectedSeats } from '../../actions/tickets'
-import { resetWarningCache } from 'prop-types'
+import { setSelectedSeats } from '../../actions/tickets';
 
 export default function CarScheme(props) {
-    const { class_type } = useSelector(state => state.tickets.currentCoach.coach.coach)
-    const { coach, seats } = useSelector(state => state.tickets.currentCoach.coach)
-    const { selectedSeats, ticketsQuantity } = useSelector(state => state.tickets)
-    const dispatch = useDispatch()
-    const [seatList, setSeatList] = useState([])
+    const { class_type } = useSelector(state => state.tickets.currentCoach.coach.coach);
+    const { coach, seats } = useSelector(state => state.tickets.currentCoach.coach);
+    const dispatch = useDispatch();
+    const [seatList, setSeatList] = useState([]);
 
     useEffect(() => {
-        dispatch(setSelectedSeats(seatList))
-    }, [seatList]);
-
-
+        dispatch(setSelectedSeats(seatList));
+    }, [seatList, dispatch]);
 
     const seatsAvailable = seats.map((seat) => {
-        if (seat.available) {
-            return seat.index
-        }
-    })
-
-
+        return (seat.available) ? seat.index : null;
+    });
 
     const changeSeatsList = (seatNumber) => {
         if ((seatList.length > 0) && seatList.includes(seatNumber)) {
             const newList = seatList.filter((seat) => {
-                return seat !== seatNumber
+                return seat !== seatNumber;
             })
-            setSeatList(newList)
+            setSeatList(newList);
         } else {
-            setSeatList([...seatList, seatNumber])
+            setSeatList([...seatList, seatNumber]);
         }
-    }
+    };
 
     return (
         <div className='ChooseSeats-CarScheme'>
@@ -54,14 +46,7 @@ export default function CarScheme(props) {
                     {class_type === 'third' && <CarThirdClass seatsAvailable={seatsAvailable} changeSeatsList={changeSeatsList} />}
                     {class_type === 'fourth' && <CarFourthClass seatsAvailable={seatsAvailable} changeSeatsList={changeSeatsList} />}
                 </div>
-
-
             </div>
-
-            {/* <div className='CarScheme-scheme first_class'></div> */}
         </div>
-
-
     )
-}
-
+};

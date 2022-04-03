@@ -1,60 +1,43 @@
 import moment from 'moment';
-import React from 'react'
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setCurrentRoute } from '../../actions/routes';
 import { featuresList } from '../../lib/const';
 import './RouteItem.css';
 
 export default function RouteItem({ item }) {
-
     const dispatch = useDispatch();
-
-    const { available_seats,
-        departure: { train,
-            from,
-            to,
-            duration,
-            available_seats_info,
-            price_info,
-            have_first_class,
-            have_fourth_class,
-            have_second_class,
-            have_third_class,
-            have_wifi,
-            is_express
-        }
+    const { departure: { train,
+        from,
+        to,
+        duration,
+        available_seats_info,
+        price_info,
+        have_first_class,
+        have_fourth_class,
+        have_second_class,
+        have_third_class,
+        have_wifi,
+        is_express
+    }
     } = item;
-    // console.log(item)
 
     const onClick = (e) => {
-        console.log('clicked')
-        console.log(e.target.value)
-        console.log(item)
-        
-        dispatch(setCurrentRoute(item))
-    }
-
+        dispatch(setCurrentRoute(item));
+    };
 
     return (
         <li className='Result-Routes-item'>
             <div className='Route-train-info'>
                 <div className="Route-train-icon"></div>
-
                 <div className="Route-train-number">{train._id}</div>
                 <div className="Route-train-route">
                     <div className="route-starting-point">
                         <span>{from.city.name} →</span>
                     </div>
-
-                    {/* <div className="route-departure-point">
-                        <span>Москва →</span>
-
-                    </div> */}
-
                     <div className="route-destination-point">
                         <span>{to.city.name}</span>
                     </div>
-
                     {train.name && <div className="train-firmName">
                         <span>«{train.name}»</span>
                     </div>}
@@ -98,9 +81,7 @@ export default function RouteItem({ item }) {
             </div>
 
             <div className='Route-price-info'>
-
                 <ul className='Route-price-classes_list'>
-
                     {have_fourth_class && <li className='Route-price-class'>
                         <span className='class_name'>Сидячий</span>
                         <span className='available_seats'>{available_seats_info.fourth}</span>
@@ -159,14 +140,9 @@ export default function RouteItem({ item }) {
                             </div>
                         }
                     </div>
-
                     <button className="Route-ChooseSeats-btn btn" onClick={onClick}>Выбрать места</button>
                 </div>
-
             </div>
         </li>
     )
-}
-
-
-
+};

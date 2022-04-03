@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import DateFilter from './DateFilter';
 import TimeFilter from './TimeFilter';
 import './DetailsFilter.css';
@@ -7,7 +7,6 @@ import PriceFilter from './PriceFilter';
 import { Collapse } from 'antd';
 
 export default function DetailsFilter(props) {
-
     const { Panel } = Collapse;
 
     return (
@@ -30,9 +29,8 @@ export default function DetailsFilter(props) {
                         </div>
                     }
                     key="1">
-                    <TimeFilter type='start'/>
+                    <TimeFilter type='start' />
                 </Panel>
-
                 <Panel
                     showArrow={false}
                     header={
@@ -43,12 +41,9 @@ export default function DetailsFilter(props) {
                         </div>
                     }
                     key="2">
-                    <TimeFilter type='end'/>
+                    <TimeFilter type='end' />
                 </Panel>
-
             </Collapse>
-
         </section>
-
     )
-}
+};

@@ -4,18 +4,17 @@ import { setSubscription } from '../../lib/api';
 import './Footer.css';
 
 export default function Footer() {
-
   const [mail, setMail] = useState('');
 
   const onInputChange = (e) => {
     setMail(e.target.value)
-  }
+  };
 
   const onInputSubmit = (e) => {
     e.preventDefault();
     setSubscription(mail);
     setMail('');
-  }
+  };
 
   const onPageUpBtnClick = (e) => {
     e.preventDefault();
@@ -23,11 +22,10 @@ export default function Footer() {
       top: 0,
       behavior: 'smooth'
     })
-  }
+  };
 
   return (
     <footer className="Footer container" id='contacts'>
-
       <div className="Footer-Contacts-container">
         <address className="Footer-Contacts">
           <h4 className="Contacts-Title">Свяжитесь с нами</h4>
@@ -75,7 +73,6 @@ export default function Footer() {
             <h4 className="Social-Title">Подписывайтесь на нас</h4>
             <ul className="Social-List">
               <li className="Social-Item">
-
                 <a href="https://www.youtube.com" className='Social-Item_link social-youtube'>{ }</a>
               </li>
               <li className="Social-Item">
@@ -99,16 +96,13 @@ export default function Footer() {
         <div className="Footer-Logo">
           <span>Лого</span>
         </div>
-
         <div className="Footer-PageUpBtn">
           <div className='Footer-PageUpBtn_link btn' onClick={onPageUpBtnClick}></div>
         </div>
-
         <div className="Footer-Copyright">
           <span>2018 WEB</span>
         </div>
       </div>
-
     </footer>
   )
-}
+};

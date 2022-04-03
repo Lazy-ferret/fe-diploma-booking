@@ -1,10 +1,10 @@
-.About-Container {
+.AboutSection-Container {
     padding-left: 16rem;
     padding-top: 9rem;
     padding-bottom: 6rem;
 }
 
-.About-Title {
+.AboutSection-Title {
     font-weight: 500;
     font-size: 2.2rem;
     line-height: 2.6rem;
@@ -12,28 +12,26 @@
     color: #292929;
 }
 
-.About-Content {
+.AboutSection-Content {
     width: 82.5rem;
-
     margin-top: 2rem;
     display: flex;
-
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.75rem;
     color: #292929;
 }
 
-.About-Content-rectangle {
+.AboutSection-Content-rectangle {
     width: 0.6rem;
     height: 14.4rem;
     background: #FFA800;
 }
 
-.About-Content-text>p {
+.AboutSection-Content-text>p {
     margin: 0 auto 2rem 1rem;
 }
 
-.About-Content-text>p:last-child {
+.AboutSection-Content-text>p:last-child {
     font-weight: bold;
 }

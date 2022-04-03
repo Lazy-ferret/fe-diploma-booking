@@ -30,4 +30,4 @@ export default function ReviewsSection(props) {
             </ul>
         </section>
     )
-}
+};

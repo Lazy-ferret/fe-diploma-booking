@@ -1,47 +1,44 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCurrentRoute } from '../../actions/routes';
 import './SeatsSelection.css';
 import CurrentTrainInfo from './CurrentTrainInfo';
 import TicketsQuantity from './TicketsQuantity';
-import { requestSeats } from '../../lib/api';
 import { getAvailableSeats } from '../../actions/tickets';
 import CarTypeSelection from './CarTypeSelection';
 import CoachesList from './CoachesList';
 import CurrentCarInfo from './CurrentCarInfo';
 import { setOrderStatus } from '../../actions/order';
 
-function SeatsSelection(props) {
+export default function SeatsSelection(props) {
     const { departure } = useSelector(state => state.routes.currentRoute);
     const { arrival } = useSelector(state => state.routes.currentRoute);
     const { ticketsQuantity, totalPrice } = useSelector(state => state.tickets);
-    const { filters } = useSelector(state => state.searchingRoute)
-    const { currentCarType, currentCoach } = useSelector(state => state.tickets)
+    const { filters } = useSelector(state => state.searchingRoute);
+    const { currentCarType, currentCoach } = useSelector(state => state.tickets);
+    const dispatch = useDispatch();
 
-    const dispatch = useDispatch();   
-
-    useEffect(() => {        
-        dispatch(getAvailableSeats(departure._id, filters))
-    }, [ticketsQuantity, filters]);
+    useEffect(() => {
+        dispatch(getAvailableSeats(departure._id, filters));
+    }, [ticketsQuantity, departure._id, filters, dispatch]);
 
     const onChangeTrainClick = () => {
-        dispatch(clearCurrentRoute())
-    }
+        dispatch(clearCurrentRoute());
+    };
 
     const onButtonClick = () => {
         if (totalPrice && ticketsQuantity) {
-            dispatch(setOrderStatus(2))
+            dispatch(setOrderStatus(2));
         }
-    }
+    };
 
     const getClassName = () => {
-        let inactive = (!totalPrice || !ticketsQuantity) ? 'inactive' : ''
-        let className = `Order-ChooseSeats-btn btn ${inactive}`
-        return className
-    }
+        let inactive = (!totalPrice || !ticketsQuantity) ? 'inactive' : '';
+        let className = `Order-ChooseSeats-btn btn ${inactive}`;
+        return className;
+    };
 
     return (
-
         <section className="Order-Result">
             <div className="Order-ChooseSeats-header">
                 <div className="ChooseSeats-title">
@@ -81,6 +78,4 @@ function SeatsSelection(props) {
             </div>
         </section>
     )
-}
-
-export default SeatsSelection
+};

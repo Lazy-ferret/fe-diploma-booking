@@ -1,19 +1,15 @@
 .Header-Progressbar {
-   
-
     position: absolute;
     width: 100%;
     height: 0.5rem;
     left: 0px;
     bottom: 0;
     z-index: 99;
-
     background-color: #FFA800;
 }
 
 .Header-Progressbar_order {
     height: 6.1rem;
-
     display: flex;
     align-items: center;
     justify-content: stretch;
@@ -24,10 +20,8 @@
     display: flex;
     align-items: center;
     padding-left: 5rem;
-
     font-weight: bold;
     height: 100%;
-
     color: #FFFFFF;
     background-color: #3E3C41;
 }
@@ -62,7 +56,6 @@
     position: absolute;
     width: 3.6rem;
     height: 3.6rem;
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -73,12 +66,9 @@
     display: inline-block;
     width: 14.5rem;
     margin-left: 2.5rem;
-
     font-size: 1.9rem;
     line-height: 2.2rem;
 }
-
-
 
 .Progressbar-Item-arrow {
     position: relative;
@@ -89,10 +79,9 @@
     fill: none;
     position: absolute;
     height: 6.1rem;
-
 }
 
 .Progressbar-Item_active .arrow {
     fill: #FFA800;
     background-color: rgba(41, 41, 41, 0);
-} 
+}
