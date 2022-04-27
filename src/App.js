@@ -8,15 +8,15 @@ import SuccessPage from './components/SuccessPage/SuccessPage';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
       <div className="App">
         <Header />
         <Routes>
           <Route path='/' element={<MainPage />} />
-          <Route path='/order' element={<OrderPage />} />
-          <Route path='/success' element={<SuccessPage />} />
+          <Route path='order' element={<OrderPage />} />
+          <Route path='success' element={<SuccessPage />} />
         </Routes>
-        <Footer path='/contacts' />
+        <Footer path='contacts' />
       </div>
     </Router>
   );
