@@ -8,7 +8,7 @@ import SuccessPage from './components/SuccessPage/SuccessPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header />
         <Routes>
