@@ -1,5 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/x4hwgsw7avcxs8hv/branch/master?svg=true)](https://ci.appveyor.com/project/Lazy-ferret/fe-diploma-booking/branch/master)
 
+GH-pages deployment https://lazy-ferret.github.io/fe-diploma-booking/
+
 # Система бронирования ЖД билетов (дипломная работа к профессии frontend-разработчик)
 
 ### Краткое описание задачи дипломной работы:
