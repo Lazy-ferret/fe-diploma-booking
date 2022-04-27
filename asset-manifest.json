@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "https://lazy-ferret.github.io/fe-diploma-booking/static/css/main.2df5f068.css",
+    "main.js": "https://lazy-ferret.github.io/fe-diploma-booking/static/js/main.c74b4adf.js",
+    "static/js/787.70c908d9.chunk.js": "https://lazy-ferret.github.io/fe-diploma-booking/static/js/787.70c908d9.chunk.js",
+    "static/media/header_order_success.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/header_order_success.3bbfd2aa21ed44ff12eb.png",
+    "static/media/header_background.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/header_background.9097c2f38a7a6a860691.png",
+    "static/media/features_background.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/features_background.34f01ceb122e759308be.png",
+    "static/media/header_order_background.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/header_order_background.32ede61739f276ce2942.png",
+    "static/media/reviews-avatar2.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/reviews-avatar2.b362f192749463f90fc3.png",
+    "static/media/reviews-avatar1.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/reviews-avatar1.498654b14486fd6e40c7.png",
+    "static/media/loading.gif": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/loading.4e2e699c349a7e5f3147.gif",
+    "static/media/car-fourth_class.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/car-fourth_class.c3b78578da339563d63f.png",
+    "static/media/car-third_class.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/car-third_class.da38131969ad55cc3b8f.png",
+    "static/media/car-second_class.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/car-second_class.07a4b3399eb8d2d55177.png",
+    "static/media/car-first_class.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/car-first_class.2afcdcbc2850c7462cb6.png",
+    "static/media/car-scheme.png": "https://lazy-ferret.github.io/fe-diploma-booking/static/media/car-scheme.3d9af727044bde64d0c6.png",
+    "index.html": "https://lazy-ferret.github.io/fe-diploma-booking/index.html",
+    "main.2df5f068.css.map": "https://lazy-ferret.github.io/fe-diploma-booking/static/css/main.2df5f068.css.map",
+    "main.c74b4adf.js.map": "https://lazy-ferret.github.io/fe-diploma-booking/static/js/main.c74b4adf.js.map",
+    "787.70c908d9.chunk.js.map": "https://lazy-ferret.github.io/fe-diploma-booking/static/js/787.70c908d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df5f068.css",
+    "static/js/main.c74b4adf.js"
+  ]
+}
